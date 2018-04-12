@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="row">
+            <div class="column all-12">
+                <h2>Help refugees rebuild their lives and communities in Manchester</h2>
+                <p>Manchester Refugee Support Network (MRSN)</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="column all-12">
+                <progress id="progress-bar" value="0" max="100"></progress>
+            </div>
+        </div>
+        <div id="current-status" class="row">
+            <div class="column all-6 ">
+                <p>Raised so far</p>
+                <h3 id="raised-so-far"></h3>
+            </div>
+            <div class="column all-6 ">
+                <p>Target</p>
+                <h3 id="target-amount"></h3>
+            </div>
+        </div>
+        <div class="row">
+            <form action="/donate" id="form-donate" method="POST">
+                <div class="column all-8 ">
+                    <label for="donation">Donate to this project</label>
+                    <input id="donation" step="0.01" type="number" name="donation" placeholder="£">
+                </div>
+                <div class="column all-4 ">
+                    <button class="btn btn-primary-dark">Donate</button>
+                </div>
+            </form>
+        </div>
+
+
+    </div>
+    <div class="wrap divider">
+        <div class="row">
+            <div class="column all-12 ">
+                <a href="#">Learn more about causes local to you</a>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>

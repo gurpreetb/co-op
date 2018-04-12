@@ -1,0 +1,61 @@
+$base-asset-url: "/static/";
+
+@import "node_modules/coop-frontend-toolkit/styles/_coop-toolkit.scss";
+
+.wrap {
+  width: 510px;
+  background: #fafafa;
+  border: 1px solid #ccc;
+  padding: 16px 40px 40px;
+}
+
+.divider {
+  border-top: 0;
+  padding-bottom: 20px;
+}
+
+progress {
+  display: block;
+  /* default: inline-block */
+  width: 100%;
+  margin: 0 0 40px;
+  border: 1px solid #919e32;
+  background: #fafcf6;
+  &::-moz-progress-bar {
+    background: #919e32;
+  }
+  &::-webkit-progress-bar {
+    background: transparent;
+  }
+  &::-webkit-progress-value {
+    background: #919e32;
+  }
+}
+
+/* webkit */
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  progress {
+    height: 25px;
+  }
+}
+
+#form-donate {
+  label {
+    font-size: 1.2em;
+  }
+  input {
+    padding: 19px 8px;
+    margin-top: 11px;
+    font-weight: bold;
+  }
+  .btn {
+    margin-top: 40px;
+    padding: 16px 20px;
+    float: right;
+    box-shadow: none;
+  }
+}
+
+#current-status p {
+  margin-bottom: 0;
+}

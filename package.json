@@ -1,0 +1,40 @@
+{
+  "name": "co-op-front-end-dev-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --port 3001 --mode development",
+    "build": "webpack --mode production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gurpreetb/co-op.git"
+  },
+  "author": "Gurpreet Badyal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gurpreetb/co-op/issues"
+  },
+  "homepage": "https://github.com/gurpreetb/co-op#readme",
+  "dependencies": {
+    "axios": "0.18.0",
+    "coop-frontend-toolkit": "2.1.0",
+    "format-currency": "1.0.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.6.1",
+    "copy-webpack-plugin": "4.5.1",
+    "css-loader": "0.28.11",
+    "extract-text-webpack-plugin": "4.0.0-beta.0",
+    "html-webpack-plugin": "3.2.0",
+    "node-sass": "4.8.3",
+    "sass-loader": "6.0.7",
+    "style-loader": "0.20.3",
+    "webpack": "^4.4.1",
+    "webpack-cli": "^2.0.12",
+    "webpack-dev-server": "3.1.3"
+  }
+}
